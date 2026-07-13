@@ -1,0 +1,208 @@
+body{
+    background-color:#f5f1e6;
+    color:#4a4a4a;
+    font-family:"Yu Mincho","Hiragino Mincho ProN",serif;
+    font-size:16px;
+    margin:0;
+}
+
+
+
+header{
+    background-color:#d8cfc4;
+    text-align:center;
+    padding:15px;
+}
+
+header h1{
+    color:#5c4b3b;
+    font-size:36px;
+    font-weight:bold;
+    text-shadow:2px 2px 4px rgba(0,0,0,0.3);
+}
+
+
+
+nav ul{
+    list-style:none;
+    padding:0;
+}
+
+nav li{
+    display:inline-block;
+    margin:0 15px;
+}
+
+
+
+a{
+    text-decoration:none;
+}
+
+a:link{
+    color:#5c4b3b;
+}
+
+a:visited{
+    color:#8b6f5c;
+}
+
+a:hover{
+    color:#b07d50;
+    text-decoration:underline;
+}
+
+a:active{
+    color:red;
+}
+
+
+
+article{
+    width:90%;
+    max-width:1200px;
+    margin:20px auto;
+    padding:20px;
+    background-color:white;
+    box-shadow:3px 3px 8px rgba(0,0,0,0.2);
+}
+
+article h1{
+    background-color:#e8dfd4;
+    color:#5c4b3b;
+    text-align:center;
+    padding:10px;
+}
+
+h2{
+    background-color:#efe7dc;
+    color:#6b5b4d;
+    padding:8px;
+}
+
+p{
+    line-height:1.8;
+}
+
+
+
+.news{
+    width:80%;
+    margin:20px auto;
+}
+
+
+
+.content-box{
+    width:100%;
+}
+
+.content-box::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.content-box section{
+    width:47%;
+    float:left;
+    margin:1%;
+    border:1px solid #b8aa99;
+    box-sizing:border-box;
+}
+
+
+
+.breadcrumb{
+    padding:0;
+}
+
+.breadcrumb li{
+    display:inline;
+}
+
+
+
+.photo{
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.clear{
+    clear:both;
+}
+
+
+
+.pagetop{
+    text-align:right;
+}
+
+
+
+footer{
+    background-color:#d8cfc4;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+
+
+
+@media screen and (max-width:600px){
+
+    nav li{
+        display:block;
+        margin:8px 0;
+    }
+
+    .content-box section{
+        width:100%;
+        float:none;
+        margin-bottom:20px;
+    }
+
+    .photo{
+        float:none;
+        display:block;
+        margin:0 auto 20px;
+        width:90%;
+        max-width:300px;
+    }
+}
+a{
+    text-decoration:none;
+}
+a:link{
+    color:#5c4b3b;
+}
+a:visited{
+    color:#8a6d5a;
+}
+a:hover{
+    color:#b07d62;
+    text-decoration:underline;
+}
+a:active{
+    color:red;
+}
+@media print{
+
+    nav{
+        display:none;
+    }
+
+    footer{
+        display:none;
+    }
+
+    body{
+        background:white;
+        color:black;
+    }
+
+}
